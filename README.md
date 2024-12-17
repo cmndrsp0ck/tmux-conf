@@ -12,7 +12,7 @@ save session(s): `ctrl + s`
 
 load saved sessions: `ctrl + r`
 
-resize panes: `ctrl + [h, j, k, l]`
+resize panes: `alt + [h, j, k, l]`
 
 join window back as pane: `[j, J]`
 
