@@ -17,6 +17,6 @@ else
     # only if it doesn't already exist.
     tmux display-popup \
         -d '#{pane_current_path}' \
-        -w 80% -h 80% -x C -y C \
+        -w 90% -h 90% -x C -y C \
         -E "tmux attach-session -t $SESSION_NAME || tmux new-session -s $SESSION_NAME"
 fi
