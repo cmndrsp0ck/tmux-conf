@@ -2,6 +2,20 @@
 
 Simple tmux.conf with some simplified bindings, useful plugins, and theme.
 
+## tmux-zoxide.sh Script
+
+The `tmux-zoxide.sh` script provides quick directory navigation with automatic tmux session creation. Copy or symlink it to `~/.local/bin/t`:
+
+```bash
+ln -s $(pwd)/tmux-zoxide.sh ~/.local/bin/t
+```
+
+Then run `t` to cd into a directory (using zoxide) and automatically create/attach a tmux session named after the directory's basename.
+
+**Dependencies:** `zoxide`, `fzf`
+
+## Key Bindings
+
 prefix: `ctrl + Space`
 
 all key bindings are preceded by the prefix:
