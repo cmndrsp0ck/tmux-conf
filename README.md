@@ -26,6 +26,16 @@ save session(s): `ctrl + s`
 
 load saved sessions: `ctrl + r`
 
+show which-key popup (all bindings): `space`
+
+split window horizontally: `[|, %]`
+
+split window vertically: `[\, "]`
+
+new window (keep current path): `c`
+
+fuzzy session switcher: `f`
+
 resize panes: `alt + [h, j, k, l]`
 
 join window back as pane: `[j, J]`
