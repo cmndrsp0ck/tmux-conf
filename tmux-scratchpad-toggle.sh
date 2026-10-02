@@ -15,8 +15,10 @@ else
     # 2. If we are NOT attached (i.e., the popup is closed), OPEN/ATTACH the client.
     # The 'tmux new-session -A -s $SESSION_NAME' part handles creating the session
     # only if it doesn't already exist.
+    # Unset TMUX inside the popup so attach/new-session don't refuse to
+    # nest (they inherit TMUX from the pane that spawned the popup).
     tmux display-popup \
         -d '#{pane_current_path}' \
         -w 90% -h 90% -x C -y C \
-        -E "tmux attach-session -t $SESSION_NAME || tmux new-session -s $SESSION_NAME"
+        -E "env -u TMUX tmux attach-session -t $SESSION_NAME || env -u TMUX tmux new-session -s $SESSION_NAME"
 fi
