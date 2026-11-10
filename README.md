@@ -62,6 +62,12 @@ enable pane: `alt + e`
 
 scratchpad toggle: `ctrl + t`
 
+workmux toggle sidebar: `ctrl + a`
+
+workmux dashboard: `ctrl + d`
+
+clear workmux status: `S`
+
 pet vertical split: `ctrl + f`
 
 compile/build prompt: `alt + B`
