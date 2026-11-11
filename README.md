@@ -66,6 +66,9 @@ enable pane: `alt + e`
 
 scratchpad toggle: `ctrl + t`
 
+The scratchpad launcher runs in the background so mouse scrolling reaches the
+popup (avoids a blocking command queue issue in tmux next-3.9).
+
 workmux toggle sidebar: `ctrl + a`
 
 workmux dashboard: `ctrl + d`
