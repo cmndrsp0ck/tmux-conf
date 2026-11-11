@@ -1,0 +1,6 @@
+# Used by workmux-popup.sh; leaves the user's global Workmux config untouched.
+mode: window
+status_format: false
+nerdfont: true
+panes:
+  - focus: true
